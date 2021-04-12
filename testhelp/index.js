@@ -2,10 +2,6 @@ const fs = require('fs');
 let Discord = require("discord.js")
 let client = new Discord.Client()
 
-const { Player } = require('discord-player');
-
-const player = new Player(client);
-client.player = player;
 client.config = require('./config/bot.json');
 client.commands = new Discord.Collection();
 
